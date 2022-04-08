@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mini_program?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: yzy
+    password: 123456
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+server:
+  port: 8081
+
+# ===== 自定义swagger配置 ===== #
+swagger:
+  enabled: true
+
+
