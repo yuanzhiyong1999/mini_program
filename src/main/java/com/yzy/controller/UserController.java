@@ -41,8 +41,8 @@ public class UserController {
     @PostMapping("/login")
     @ResponseBody
     public Result login(String code) {
-        String appid = "wx0fbfa1fcbf756d9e";
-        String secret = "5d23321887243d2fec25505193c90760";
+        String appid = "xxxxxxxxxx";
+        String secret = "xxxxxxxxxxx";
         String wx = restTemplate.getForObject("https://api.weixin.qq.com/sns/jscode2session?appid=" + appid
             + "&secret=" + secret + "&js_code=" + code + "&grant_type=authorization_code", String.class);
 
